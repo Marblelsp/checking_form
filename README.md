@@ -68,6 +68,11 @@ docker-compose exec web python manage.py loaddata fixtures.json
 В тестовой бд несколько форм и суперюзер: login: admin, password: admin.
 После чего перейдите по адресу: http://127.0.0.1:8000/get_form/
 
+Так же в комплекте есть пару тестов, которые вы можете выполнить из контейнера командой
+```python
+docker-compose exec web python manage.py test
+```
+
 
 
 
